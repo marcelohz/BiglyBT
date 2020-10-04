@@ -2032,6 +2032,9 @@ public class FileUtil {
 				}catch( Throwable e ){
 				}
 	    	}
+
+				/* Android: removed same drive check. renameTo will either work or fallback to copy */
+				same_drive = true;
 			
 	    	boolean	use_copy = COConfigurationManager.getBooleanParameter("Copy And Delete Data Rather Than Move");
 
