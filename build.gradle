@@ -7,12 +7,12 @@ compileJava.options.encoding = "UTF-8"
 idea {
     module {
         // .add didn't work :(
-        excludeDirs += file('BiglyBT/core/src/com/biglybt/core/devices')
-        excludeDirs += file('BiglyBT/core/src/com/biglybt/core/util/dns')
-        excludeDirs += file('BiglyBT/core/src/com/biglybt/core/util/jman')
-        excludeDirs += file('BiglyBT/core/src/com/biglybt/internat')
-        excludeDirs += file('BiglyBT/core/src/com/biglybt/core/util/spi')
-        excludeDirs += file('BiglyBT/core/src/com/biglybt/core/devices')
+        excludeDirs += file('core/src/com/biglybt/core/devices')
+        excludeDirs += file('core/src/com/biglybt/core/util/dns')
+        excludeDirs += file('core/src/com/biglybt/core/util/jman')
+        excludeDirs += file('core/src/com/biglybt/internat')
+        excludeDirs += file('core/src/com/biglybt/core/util/spi')
+        excludeDirs += file('core/src/com/biglybt/core/devices')
     }
 }
 
@@ -45,7 +45,7 @@ sourceSets {
 
         java {
             srcDirs = [
-                    'BiglyBT/core/src/'
+                    'core/src/'
             ]
             exclude 'com/biglybt/core/util/dns/**'
             exclude 'com/biglybt/core/util/jman/**'
@@ -60,7 +60,7 @@ sourceSets {
         resources {
             includes = ['com/biglybt/ui/android/internat/*.properties']
             srcDirs = [
-                    'BiglyBT/uis/src'
+                    'uis/src'
             ]
         }
     }
