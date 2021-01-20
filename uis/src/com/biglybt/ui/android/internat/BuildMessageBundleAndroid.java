@@ -12,7 +12,7 @@ import java.net.URISyntaxException;
 public class BuildMessageBundleAndroid {
 	public static void main(String[] args) throws IOException, URISyntaxException {
 		BuildMessageBundleNone.main(new String[] {
-			new File(args.length > 0 ? args[0] : "").getAbsolutePath(),
+			new File(args.length > 0 ? args[0] : "core").getAbsolutePath(),
 			"uis/src/com/biglybt/ui/android/internat"
 		});
 	}
